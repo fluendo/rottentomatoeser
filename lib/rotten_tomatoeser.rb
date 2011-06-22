@@ -1,4 +1,4 @@
-require 'rotten_tomatoes/api'
-require 'rotten_tomatoes/movie_info'
-require 'rotten_tomatoes/movie_reviews'
-require 'rotten_tomatoes/search'
+require 'rotten_tomatoeser/api'
+require 'rotten_tomatoeser/movie_info'
+require 'rotten_tomatoeser/movie_reviews'
+require 'rotten_tomatoeser/search'

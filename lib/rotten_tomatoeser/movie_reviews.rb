@@ -3,14 +3,10 @@ module RottenTomatoes
   class MovieReviews < API
     
     def initialize(options)
-      super(options.merge!({ :action => :reviews }))
+      super(options.delete_if{ |k,v| [:movie_id].include?(k) })
     end
-    
-    def get_one_review
-      
-    end
-    
-    def get_reviews
+       
+    def get_results
       
     end
     

@@ -4,7 +4,7 @@ module RottenTomatoes
     
     def initialize(options)
       @movie_id = options[:movie_id]
-      super(options)
+      super(options.delete_if{ |k,v| [:movie_id].include?(k) })
     end
     
     def define_action
