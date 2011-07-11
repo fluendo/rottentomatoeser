@@ -5,11 +5,11 @@
 
 Gem::Specification.new do |s|
   s.name = %q{rotten_tomatoeser}
-  s.version = "0.0.0"
+  s.version = "0.1.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Fran\303\247ois Turbelin"]
-  s.date = %q{2011-06-22}
+  s.date = %q{2011-07-11}
   s.description = %q{TODO: longer description of your gem}
   s.email = %q{pacodelaluna@gmail.com}
   s.extra_rdoc_files = [
@@ -19,13 +19,19 @@ Gem::Specification.new do |s|
   s.files = [
     ".document",
     "Gemfile",
+    "Gemfile.lock",
     "LICENSE.txt",
     "README.rdoc",
     "Rakefile",
     "VERSION",
     "lib/rotten_tomatoeser.rb",
+    "lib/rotten_tomatoeser/api.rb",
+    "lib/rotten_tomatoeser/movie_info.rb",
+    "lib/rotten_tomatoeser/movie_reviews.rb",
+    "lib/rotten_tomatoeser/search.rb",
+    "rotten_tomatoeser.gemspec",
     "test/helper.rb",
-    "test/test_rotten_tomatoeser.rb"
+    "test/test_rt_movie_info.rb"
   ]
   s.homepage = %q{http://github.com/pacodelaluna/rotten_tomatoeser}
   s.licenses = ["MIT"]
@@ -42,12 +48,14 @@ Gem::Specification.new do |s|
       s.add_development_dependency(%q<bundler>, ["~> 1.0.0"])
       s.add_development_dependency(%q<jeweler>, ["~> 1.6.2"])
       s.add_development_dependency(%q<rcov>, [">= 0"])
+      s.add_development_dependency(%q<fakeweb>, [">= 0"])
     else
       s.add_dependency(%q<json>, [">= 0"])
       s.add_dependency(%q<shoulda>, [">= 0"])
       s.add_dependency(%q<bundler>, ["~> 1.0.0"])
       s.add_dependency(%q<jeweler>, ["~> 1.6.2"])
       s.add_dependency(%q<rcov>, [">= 0"])
+      s.add_dependency(%q<fakeweb>, [">= 0"])
     end
   else
     s.add_dependency(%q<json>, [">= 0"])
@@ -55,6 +63,7 @@ Gem::Specification.new do |s|
     s.add_dependency(%q<bundler>, ["~> 1.0.0"])
     s.add_dependency(%q<jeweler>, ["~> 1.6.2"])
     s.add_dependency(%q<rcov>, [">= 0"])
+    s.add_dependency(%q<fakeweb>, [">= 0"])
   end
 end
 
