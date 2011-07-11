@@ -11,7 +11,11 @@ module RottenTomatoes
     end
     
     def get_results
-      return parse_response['movies']
+      return parse_response['movies'] || []
+    end
+    
+    def total
+      return parse_response['total']
     end
     
     def get_first_result

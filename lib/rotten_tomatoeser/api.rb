@@ -7,7 +7,8 @@ module RottenTomatoes
     def initialize(options)
       @api_key = options[:api_key]
       @base_url = options[:base_url] || "http://api.rottentomatoes.com/api/public/v1.0"
-      @params = options.delete_if{ |k,v| [:api_key, :base_url, :movie_id].include?(k) }
+      @debug = options[:debug] || false
+      @params = options.delete_if{ |k,v| [:api_key, :base_url, :debug].include?(k) }
     end
     
     def build_request
@@ -15,7 +16,7 @@ module RottenTomatoes
     end
     
     def define_action
-      
+      # to be define in child class
     end
     
     def define_params
@@ -28,7 +29,7 @@ module RottenTomatoes
     end
     
     def parse_response
-      p build_request
+      build_request if @debug
       json = Net::HTTP.get(URI.parse(build_request))
       return JSON.parse(json)
     end
