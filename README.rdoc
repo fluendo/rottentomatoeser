@@ -1,4 +1,4 @@
-= rotten_tomatoeser
+= rottentomatoeser
 
 Description goes here.
 
@@ -14,6 +14,6 @@ Description goes here.
 
 == Copyright
 
-Copyright (c) 2011 François Turbelin. See LICENSE.txt for
+Copyright (c) 2011 Fluendo. See LICENSE.txt for
 further details.
 

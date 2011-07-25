@@ -4,7 +4,7 @@
 # -*- encoding: utf-8 -*-
 
 Gem::Specification.new do |s|
-  s.name = %q{rotten_tomatoeser}
+  s.name = %q{rottentomatoeser}
   s.version = "0.1.0"
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
@@ -24,16 +24,16 @@ Gem::Specification.new do |s|
     "README.rdoc",
     "Rakefile",
     "VERSION",
-    "lib/rotten_tomatoeser.rb",
-    "lib/rotten_tomatoeser/api.rb",
-    "lib/rotten_tomatoeser/movie_info.rb",
-    "lib/rotten_tomatoeser/movie_reviews.rb",
-    "lib/rotten_tomatoeser/search.rb",
-    "rotten_tomatoeser.gemspec",
+    "lib/rottentomatoeser.rb",
+    "lib/rottentomatoeser/api.rb",
+    "lib/rottentomatoeser/movie_info.rb",
+    "lib/rottentomatoeser/movie_reviews.rb",
+    "lib/rottentomatoeser/search.rb",
+    "rottentomatoeser.gemspec",
     "test/helper.rb",
     "test/test_rt_movie_info.rb"
   ]
-  s.homepage = %q{http://github.com/pacodelaluna/rotten_tomatoeser}
+  s.homepage = %q{http://github.com/fluendo/rottentomatoeser}
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
   s.rubygems_version = %q{1.6.2}

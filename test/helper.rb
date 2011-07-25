@@ -14,7 +14,7 @@ require 'json'
 
 $LOAD_PATH.unshift(File.join(File.dirname(__FILE__), '..', 'lib'))
 $LOAD_PATH.unshift(File.dirname(__FILE__))
-require 'rotten_tomatoeser'
+require 'rottentomatoeser'
 
 def fake_rt_movie_info
   FakeWeb.register_uri(:get, %r|http://api\.rottentomatoes\.com/api/public/v1\.0/movies/.*\.json\?apikey=.*|, :body => PredefinedResponse.movie_info)
