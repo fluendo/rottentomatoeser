@@ -9,36 +9,18 @@ Gem::Specification.new do |s|
 
   s.required_rubygems_version = Gem::Requirement.new(">= 0") if s.respond_to? :required_rubygems_version=
   s.authors = ["Fran\303\247ois Turbelin"]
-  s.date = %q{2011-07-25}
-  s.description = %q{TODO: longer description of your gem}
+  s.date = %q{2011-09-20}
+  s.description = %q{To address RottenTomatoes objects.}
   s.email = %q{pacodelaluna@gmail.com}
   s.extra_rdoc_files = [
     "LICENSE.txt",
     "README.rdoc"
   ]
-  s.files = [
-    ".document",
-    "Gemfile",
-    "Gemfile.lock",
-    "LICENSE.txt",
-    "README.rdoc",
-    "Rakefile",
-    "VERSION",
-    "lib/rotten_tomatoeser/api.rb",
-    "lib/rotten_tomatoeser/movie_info.rb",
-    "lib/rotten_tomatoeser/movie_reviews.rb",
-    "lib/rotten_tomatoeser/search.rb",
-    "lib/rottentomatoeser.rb",
-    "rotten_tomatoeser.gemspec",
-    "rottentomatoeser.gemspec",
-    "test/helper.rb",
-    "test/test_rt_movie_info.rb"
-  ]
   s.homepage = %q{http://github.com/fluendo/rottentomatoeser}
   s.licenses = ["MIT"]
   s.require_paths = ["lib"]
-  s.rubygems_version = %q{1.6.2}
-  s.summary = %q{TODO: one-line summary of your gem}
+  s.rubygems_version = %q{1.5.1}
+  s.summary = %q{Wrapper for RottenTomatoes API}
 
   if s.respond_to? :specification_version then
     s.specification_version = 3
